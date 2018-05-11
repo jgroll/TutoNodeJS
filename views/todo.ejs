@@ -1,0 +1,13 @@
+<h1>Ma todolist</h1>
+
+<p> Que dois-je faire ?</p>
+<ul><% 
+    for(var i=0 ; i < task.length; i++){ 
+    %>
+    <li> <%= task[i] %> </li>
+    <% } %>
+</ul>
+<form action="/ajouter" method="post">
+    <input type="text" id="tache" name ="tache"/> 
+    <input type="submit"value="Submit"/>
+</form>
